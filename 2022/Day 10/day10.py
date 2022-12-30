@@ -15,9 +15,6 @@ for i in range(0,6):
     CRT.append([])
     for j in range(0,40):
         CRT[i].append(".")
-        
-
-
 while currentline <= 139:
     log.append((clock, x))
     clock += 1

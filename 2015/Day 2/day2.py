@@ -1,3 +1,5 @@
+
+
 f = open("input2.txt")
 presents = f.readlines()
 total = 0
