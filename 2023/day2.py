@@ -51,3 +51,4 @@ for Game in Games:
 	total_power += cur_bag['red']*cur_bag['blue']*cur_bag['green']
 		
 print(total_power)
+

@@ -8,7 +8,7 @@
     },
     "include": [
         
-   "day1.ts"    ],
+   "2015/day1.ts"    ],
     "exclude": [
         "node_modules"
     ]
