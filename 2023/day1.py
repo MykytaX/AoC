@@ -9,29 +9,29 @@ from utils import parseinput
 
 lines = parseinput("inputs/2023-1.txt")
 
-# # Part 1 Solution 1
-# def findfirstnum(line):
-#     for i in range(0, len(line)):
-#         if line[i].isdigit():
-#             return line[i]
-#     return '0'
+# Part 1 Solution 1
+def findfirstnum(line):
+    for i in range(0, len(line)):
+        if line[i].isdigit():
+            return line[i]
+    return '0'
 
-# def findsecondnum(line):
-#     for i in range(1, len(line)+1):
-#         if line[-i].isdigit():
-#             return line[-i]
-#     return '0'
+def findsecondnum(line):
+    for i in range(1, len(line)+1):
+        if line[-i].isdigit():
+            return line[-i]
+    return '0'
 
-# total_sum = 0
-# for line in lines:
-#     print(line)
-#     number1 = findfirstnum(line)
-#     number2 = findsecondnum(line)
-#     sum = number1 + number2
-#     print(f'{number1} {number2} {sum}')
-#     total_sum += int(sum)
+total_sum = 0
+for line in lines:
+    print(line)
+    number1 = findfirstnum(line)
+    number2 = findsecondnum(line)
+    sum = number1 + number2
+    print(f'{number1} {number2} {sum}')
+    total_sum += int(sum)
 
-# print(total_sum)
+print(total_sum)
 
 # Part 2 Solution 2
 
