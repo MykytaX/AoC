@@ -13,15 +13,13 @@ lines = [x.strip() for x in parseinput('inputs/2023-9.txt')]
 
 # def godown(numseq):
 #     newseq = []
-#     for i in range(0, len(numseq)-1):
 #         difference = numseq[i+1] - numseq[i]
+#     for i in range(0, len(numseq)-1):
 #         newseq.append(difference)
 #     if set(newseq) != {0}:
 #         return numseq[-1]+godown(newseq)
 
-#     else:
-#         return numseq[-1]
-
+#     else: #         return numseq[-1]
 def godown2(numseq):
     newseq = []
     for i in range(0, len(numseq)-1):
@@ -36,7 +34,7 @@ print(lines)
 sum = 0
 for line in lines:
     numseq = [int(x) for x in line.split(' ')]
+
     sum += numseq[0] - godown2(numseq)
     
-
 print(sum)
